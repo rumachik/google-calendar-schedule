@@ -1,0 +1,26 @@
+{
+  "name": "Google Calendar Scheduler",
+  "description": "TODO",
+  "default_locale": "en",
+  "version": "0.1",
+      "content_scripts":[{
+        "matches": [
+            "https://www.google.com/calendar/*",
+            "https://calendar.google.com/calendar/*"
+        ],
+        "js": [
+            "jquery-3.1.1.min.js",
+            "schedule.js"
+        ],
+        "run_at": "document_end"
+    }],
+  "permissions": [
+        "https://www.google.com/calendar/*",
+        "https://calendar.google.com/*"
+  ],
+  //"icons": {
+  //  "48": "icon48.png",
+  //  "128": "icon128.png"
+  //},
+  "manifest_version": 2
+}
